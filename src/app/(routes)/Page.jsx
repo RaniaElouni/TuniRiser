@@ -11,8 +11,7 @@ import Partnaires from "@/components/home/Partnaires";
 import Stars from "@/components/home/Stars";
 import Faqs from "@/components/home/Faqs";
 
-
-const page = () => {
+const Page = () => {
   return (
     <div className=" no-scrollbar overflow-y-scroll  overflow-x-hidden  ">
       {/* <Hero /> */}
@@ -22,15 +21,14 @@ const page = () => {
       </div>
       {/* <ProgressSlider /> */}
       {/* <Work /> */}
-      <Faqs/>
+      <Faqs />
       <div className="lg:mb-48 mb-24">
         <Stars />{" "}
       </div>
       <Reviews />
       {/* <Partnaires /> */}
-   
     </div>
   );
 };
 
-export default page;
+export default Page;

@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 import { Send } from "lucide-react";
 import Lottie from "react-lottie-player";
-import message from "../../../images/lotties/message.json"
+import message from "../../../images/lotties/message.json";
 
 import "../../../styles/contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import message from ""
 
-function page() {
+function Page() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -30,8 +30,8 @@ function page() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
- 
- setLoading(true);
+
+    setLoading(true);
     const templateParams = {
       to_name: "TUNIRISE service client",
       from_name: formData.fullName,
@@ -130,7 +130,13 @@ function page() {
               style={{ fontSize: "3.5rem" }}
             >
               Discutons <br /> de votre
-             <span style={{backgroundColor:"white"}} className="rounded-md text-primary px-4 pt-3 mx-4 pr-8"> besoin</span>
+              <span
+                style={{ backgroundColor: "white" }}
+                className="rounded-md text-primary px-4 pt-3 mx-4 pr-8"
+              >
+                {" "}
+                besoin
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
@@ -326,4 +332,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
