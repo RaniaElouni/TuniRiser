@@ -41,9 +41,11 @@ const Header = () => {
   return (
     <div
       className={`${
-        location.pathname === "/" || location.pathname === "/propos"
-          ? "bg-hero bg-no-repeat bg-bottom bg-cover"
-          : ""
+        // location.pathname === "/" || location.pathname === "/propos"
+          // ? 
+          "bg-hero bg-no-repeat bg-bottom bg-cover"
+          // : 
+          // ""
       } overflow-x-hidden `}
     >
       <header
