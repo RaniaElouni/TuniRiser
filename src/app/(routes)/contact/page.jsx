@@ -1,6 +1,7 @@
 
 "use client";
-import { Contact } from 'lucide-react'
+
+import Contact from '@/components/Contact';
 import React from 'react'
 
 function Page() {

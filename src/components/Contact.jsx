@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 import { Send } from "lucide-react";
 import Lottie from "react-lottie-player";
-import message from "../../../images/lotties/message.json";
+import message from "../images/lotties/message.json";
 
-import "../../../styles/contact.css";
+import "../styles/contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import message from ""
@@ -211,23 +211,7 @@ function Contact() {
                       className="flex h-[54px] w-full rounded-full border border-input bg-background px-8 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none  focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-primary"
                     />
                   </div>
-                  {/* <div className="flex-1 mt-6">
-                    <label
-                      className="block mb-2 text-sm text-gray-800 font-inter  tracking-wide"
-                      style={{ fontSize: "13px" }}
-                    >
-                      Sujet
-                    </label>
-                    <input
-                      required
-                      // type="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      name="subject"
-                      placeholder="Adresse e-mail"
-                      className="flex h-[54px] w-full rounded-full border border-input bg-background px-8 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none  focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-primary"
-                    />
-                  </div> */}
+                 
                   <div className="w-full mt-6">
                     <label
                       className="block mb-2 text-sm text-gray-800 font-inter  tracking-wide"

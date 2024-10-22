@@ -196,11 +196,12 @@ const Header = () => {
       <h1
         style={{
           fontFamily: "AgainstRegular",
-          lineHeight: "50px",
+          lineHeight: "70px",
         }}
         className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
       >
-       REMEMBER US, TEHY REMEMBER YOU
+      YOU'LL REMEMBER US, BECAUSE TEHY WILL REMEMBER YOU
+
       </h1>
       <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
       At Tunirise, we believe in the power of connection. We strive to create innovative media and web solutions that foster relationships and inspire lasting impact. Together, we build a future where every story matters.
