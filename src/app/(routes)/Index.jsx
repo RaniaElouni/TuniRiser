@@ -11,7 +11,7 @@ import Partnaires from "@/components/home/Partnaires";
 import Stars from "@/components/home/Stars";
 import Faqs from "@/components/home/Faqs";
 
-const Page = () => {
+const Index = () => {
   return (
     <div className=" no-scrollbar overflow-y-scroll  overflow-x-hidden  ">
       {/* <Hero /> */}
@@ -31,4 +31,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Index;
