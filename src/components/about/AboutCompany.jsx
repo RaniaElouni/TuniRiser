@@ -57,7 +57,7 @@ function AboutCompany() {
               <div className='lg:mb-[3rem] flex items-center md:space-x-10'>
                 <span className='w-[200px] hidden md:block h-[5px] bg-primary rounded-sm'></span>
                 <p className='text-[19px] text-gray-800 subtitle'>
-                  Univers Automatisme est une société tunisienne spécialisée dans l'importation ,la distribution et l'installation des composants pneumatiques,électriques,Hydraulique et d'Automatismes pour l'industrie .
+                  Univers Automatisme est une société tunisienne spécialisée dans l`&apos;importation ,la distribution et l`&apos;installation des composants pneumatiques,électriques,Hydraulique et d`&apos;Automatismes pour l`&apos;industrie .
                 </p>
               </div>
               <Button className='gap-x-2 text-white'>

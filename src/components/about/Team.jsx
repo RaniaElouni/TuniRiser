@@ -86,7 +86,7 @@ function Team() {
             className=""
           >
             {teamMembers.map((elem, i) => (
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" key={i}>
                 <div className="space-y-4 w-[320px] h-[320px] sm:h-full sm:w-full ">
                   <div className="  aspect-[3/2] p-2 overflow-hidden border rounded-3xl border-primary">
                     <Image

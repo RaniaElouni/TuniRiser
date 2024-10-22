@@ -39,7 +39,7 @@ function Mission() {
         </div>
         <div className="flex  flex-wrap xl:justify-between justify-center  gap-32 mx-[20px]  lg:m-0 ">
           {heights.map((elem, i) => (
-            <div className="relative h-auto ">
+            <div className="relative h-auto " key={i}>
               <div className="md:w-full lg:w-[590px] md:w-[300px] md:h-auto absolute z-10 inset-0 bg-gradient-to-r from-primary to-transparent shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-lg"></div>
               <div className="md:w-full lg:w-[590px] md:h-auto relative z-20 p-6 bg-white md:flex justify-between shadow-lg rounded-lg">
                 <div className="sm:flex flex-col justify-between space-y-4 py-4 md:pr-6 w-full">
