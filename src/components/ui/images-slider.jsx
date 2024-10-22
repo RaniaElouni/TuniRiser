@@ -134,7 +134,7 @@
 // };
 import React from 'react'
 
-export default function images-slider() {
+export default function imagesSlider() {
   return (
     <div>images-slider</div>
   )
