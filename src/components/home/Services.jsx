@@ -125,7 +125,7 @@ const Services = () => {
 
   return (
     <section className="" data-aos="fade-right">
-      <div className="container mx-auto ">
+      <div className="mx-auto xl:container md:container sm:container mx-auto ">
         <div className="mb-24 ">
           <Heading tit1="OUR SERVICES" tit2="OUR SERVICES" />
         </div>

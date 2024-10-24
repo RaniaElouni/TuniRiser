@@ -78,7 +78,7 @@ export default function Reviews() {
 
   return (
     <section
-      className=" lg:mb-48 mb-24 xl:pt-0  overflow-hidden container"
+      className=" lg:mb-48 mb-24 xl:pt-0  overflow-hidden mx-auto xl:container md:container sm:container"
       data-aos="fade-left"
     >
              <div className="lg:mb-24"><Heading tit1="REVIEWS" tit2="REVIEWS"/></div>

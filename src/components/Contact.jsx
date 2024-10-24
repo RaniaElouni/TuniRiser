@@ -115,7 +115,7 @@ function Contact() {
   return (
     <section className="w-full min-h-screen mb-[10rem] mt-[5rem]">
       <div className="first-section  bg-gradient-to-l from-transparent to-primary  sm:p-16 md:p-24 xl:p-24  flex justify-center lg:justify-end relative ">
-        <div className="container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between ">
+        <div className="mx-auto xl:container md:container sm:container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between ">
           <div className="  lg:w-1/2  mb-6 lg:mb-0 text-center md:text-left ">
             <div
               className="text-xl uppercase  mb-4 text-white  hidden lg:block "

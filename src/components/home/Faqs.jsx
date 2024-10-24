@@ -47,7 +47,7 @@ export default function Faqs() {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <section className="container pb-24">
+    <section className="mx-auto xl:container md:container sm:container pb-24">
       <Heading tit1={"FREQUENTLY"} tit2={" ASKED"} />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full">

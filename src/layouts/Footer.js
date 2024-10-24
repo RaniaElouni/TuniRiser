@@ -7,7 +7,7 @@ import Socials from "@/components/Socials";
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="container py-8 mx-auto flex flex-wrap items-end justify-between">
+      <div className="mx-auto xl:container md:container sm:container py-8 mx-auto flex flex-wrap items-end justify-between">
         {/* Logo and Text */}
         <div className="flex title-font font-medium items-end md:justify-start justify-center text-gray-900">
           <Image width={50} height={50} src={logo} alt="Tunirise Logo" className="mb-1"/>
