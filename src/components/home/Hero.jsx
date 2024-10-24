@@ -30,12 +30,12 @@ const Hero = () => {
     AOS.refresh();
   }, []);
   return (
-    // <div
-    //   className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
-    // >
+    <div
+      className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
+    >
       <section
-        className="py-12 mt-16 xl:py-10 lg:h-[84vh]  min-h-full dark:bg-none"
-        data-aos="fade-right"
+        className="head py-12 mt-16 xl:py-24 lg:h-[84vh] relative flex min-h-full w-full flex-col sm:place-content-center px-4 dark:bg-none"
+        // data-aos="fade-right"
       >
         <div className="container mx-auto">
           <div className="flex justify-between gap-x-8">
@@ -121,7 +121,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    // </div>
+    </div>
   );
 };
 
