@@ -174,7 +174,7 @@ function Contact() {
             {!formSubmitted && (
               <>
                 <h1 className="text-1xl  uppercase  mb-4 text-primary ">
-                  Envoyez-nous un message
+                  Envoyez-nous un messagee
                 </h1>
                 <form className="mt-6" onSubmit={sendEmail}>
                   <div className="flex-1">
@@ -267,7 +267,7 @@ function Contact() {
                     className="mt-4  font-caveat tracking-[1px] text-primary"
                     style={{ fontSize: "8px", fontFamily: "AgainstRegular" }}
                   >
-                    Comment pouvons-nous vous aider ???????
+                    Comment pouvons-nous vous aider ?
                   </h2>
                   <p
                     className="mt-2 text-sm text-gray-700 font-inter tracking-wide"
