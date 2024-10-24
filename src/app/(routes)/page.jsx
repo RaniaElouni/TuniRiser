@@ -2,7 +2,7 @@
 import React from "react";
 import "../../styles/globals.css";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
+import About from "@/components/about/About";
 import Services from "@/components/home/Services";
 
 import Reviews from "@/components/home/Reviews";
@@ -14,7 +14,6 @@ const Page = () => {
   return (
     <div className=" no-scrollbar overflow-y-scroll  overflow-x-hidden  ">
       <Hero />
-      <About />
       <div className="xl:mt-[19rem] lg:mt-[11rem]">
         <Services />
       </div>

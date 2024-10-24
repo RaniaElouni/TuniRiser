@@ -1,18 +1,6 @@
 'use client';
 import React, { useEffect } from "react";
-import DevImg from "../DevImg";
-import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import {
-  User2,
-  MailIcon,
-  HomeIcon,
-  PhoneCall,
-  GraduationCap,
-  Calendar,
-  Briefcase,
-} from "lucide-react";
 
 
 const Milestones = [
@@ -64,7 +52,7 @@ export default function About() {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:max-h-[860px] lg:mb-48 mb-24 pt-24 mx-auto xl:container md:container sm:container" data-aos="fade-left">
+    <section className="xl:max-h-[860px] mx-auto xl:container md:container sm:container  lg:pb-48 pb-24" data-aos="fade-left">
     
       <div className="lg:mb-12 ">
         <Heading tit1="ABOUT US" tit2="ABOUT US" />

@@ -18,7 +18,7 @@ function Values() {
   }, []);
   return (
     <section
-    className=" mx-auto xl:container md:container sm:container  lg:pb-48 pb-24  "
+    className=" mx-auto xl:container md:container sm:container  lg:pb-32 pb-24  "
     data-aos="fade-left"
   >
         <div className="mx-2">
