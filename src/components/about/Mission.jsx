@@ -30,7 +30,7 @@ function Mission() {
   ];  
   return (
     <section
-      className=" mx-auto xl:container md:container sm:container  lg:pb-36 pb-24 pt-24 px-4"
+      className=" mx-auto xl:container md:container sm:container  lg:pb-36 pb-32 pt-24 px-4"
       data-aos="fade-right"
     >
       <div className="mx-2">
