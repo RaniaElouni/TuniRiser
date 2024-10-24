@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Heading({tit1,tit2}) {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center mb-12 xl:mb-12 ">
+    <div className={`flex flex-col md:flex-row justify-between items-center ${tit1 !== "ABOUT US" ? "mb-12 ":"" }xl:mb-12 `}>
           <h2
             className="section-title text-sm text-center md:text-left"
             style={{
