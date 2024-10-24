@@ -34,10 +34,10 @@ const Hero = () => {
       className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
     >
       <section
-        className="head py-12 mt-16 xl:py-24 lg:h-[84vh] relative flex min-h-full w-full flex-col sm:place-content-center px-4 dark:bg-none"
-        // data-aos="fade-right"
+        className="py-12 mt-16 xl:py-10 lg:h-[84vh]  min-h-full dark:bg-none"
+        data-aos="fade-right"
       >
-        <div className=" mx-auto">
+        <div className="pr-[2rem] pl-[2rem] max-w-[1400px] mx-auto">
           <div className="flex justify-between gap-x-8">
             {/* text */}
             <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">

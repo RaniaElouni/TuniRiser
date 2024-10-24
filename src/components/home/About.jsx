@@ -64,9 +64,9 @@ export default function About() {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:max-h-[860px] lg:mb-48 mb-24 pt-24" data-aos="fade-left">
-    <div className="">
-      <div className="lg:mb-12 container">
+    <section className="xl:max-h-[860px] lg:mb-48 mb-24 pt-24 mx-auto xl:container md:container sm:container" data-aos="fade-left">
+    
+      <div className="lg:mb-12 ">
         <Heading tit1="ABOUT US" tit2="ABOUT US" />
       </div>
 
@@ -105,7 +105,7 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+   
   </section>
   );
 }
