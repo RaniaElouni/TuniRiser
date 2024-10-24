@@ -13,7 +13,7 @@ import Faqs from "@/components/home/Faqs";
 const Page = () => {
   return (
     <div className=" no-scrollbar overflow-y-scroll  overflow-x-hidden  ">
-      {/* <Hero /> */}
+      <Hero />
       <About />
       <div className="xl:mt-[19rem] lg:mt-[11rem]">
         <Services />
