@@ -42,7 +42,7 @@ const Footer = () => {
                 </Link>
           </div>
 
-          <div class="lg:mx-auto lg:text-left text-center ">
+          <div class="lg:mx-auto lg:text-left  ">
             <h4 class="text-lg text-gray-900 font-medium mb-7">TUNIRISE</h4>
             <ul className="text-sm transition-all duration-500">
               <li className="mb-6">
@@ -77,7 +77,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="lg:mx-auto   lg:text-left text-center ">
+          <div class="lg:mx-auto   lg:text-left  ">
             <h4 class="text-lg text-gray-900 font-medium mb-7">
               Media Production
             </h4>
@@ -89,7 +89,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="lg:mx-auto lg:text-left text-center ">
+          <div class="lg:mx-auto lg:text-left  ">
             <h4 class="text-lg text-gray-900 font-medium mb-7">
               Web development
             </h4>
@@ -101,7 +101,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="lg:mx-auto  lg:text-left text-center ">
+          <div class="lg:mx-auto  lg:text-left ">
             <h4 class="text-lg text-gray-900 font-medium mb-7">Values</h4>
             <ul class="text-sm  transition-all duration-500">
               <li class="mb-6 text-gray-600">Creativity</li>
