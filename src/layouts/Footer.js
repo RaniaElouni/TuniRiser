@@ -37,7 +37,7 @@ const Footer = () => {
               Helping businesses build their tomorrow, today. Contact us to
               bring your ideas to life.
             </p>
-            <Link href="/contact" className="flex items-center justify-center">
+            <Link href="/contact" className="flex items-center sm:justify-start justify-center">
                   <Button className="gap-x-2 text-white" size="sm">Contact Us</Button>
                 </Link>
           </div>
