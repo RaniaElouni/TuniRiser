@@ -37,7 +37,7 @@ const Hero = () => {
         className="head py-12 mt-16 xl:py-24 lg:h-[84vh] relative flex min-h-full w-full flex-col sm:place-content-center px-4 dark:bg-none"
         // data-aos="fade-right"
       >
-        <div className="container mx-auto">
+        <div className=" mx-auto">
           <div className="flex justify-between gap-x-8">
             {/* text */}
             <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
