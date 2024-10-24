@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Download, Send } from "lucide-react";
+
 
 import {
   RiArrowDownSLine,
@@ -17,8 +17,7 @@ import Socials from "../Socials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import NewProject from "../../images/NewProject.png";
-import Image from "next/image";
+
 
 const Hero = () => {
   useEffect(() => {
@@ -31,9 +30,9 @@ const Hero = () => {
     AOS.refresh();
   }, []);
   return (
-    <div
-      className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
-    >
+    // <div
+    //   className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
+    // >
       <section
         className="py-12 mt-16 xl:py-10 lg:h-[84vh]  min-h-full dark:bg-none"
         data-aos="fade-right"
@@ -122,7 +121,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </div>
+    // </div>
   );
 };
 
