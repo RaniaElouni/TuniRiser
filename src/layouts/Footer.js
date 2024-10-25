@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 
 
 import logo from "../images/logounivers.png";
+import Tunirise from "@/components/Tunirise";
 
 const Footer = () => {
   return (
@@ -19,21 +20,11 @@ const Footer = () => {
           <div className="flex title-font font-medium items-end md:justify-start justify-center text-gray-900">
           <Image width={50} height={50} src={logo} alt="Tunirise Logo" className="mb-1"/>
           <Link href="/">
-            <div className="">
-              <span className="cursor-pointer text-primary ml-3 HammersmithOne text-3xl">
-                T
-              </span>
-              <span className="cursor-pointer text-primary MonumentExtended text-2xl">
-                un
-              </span>
-              <span className="cursor-pointer text-primary  HammersmithOne text-3xl">
-                iRise
-              </span>
-            </div>
+          <Tunirise triseSize="text-3xl" unSize="text-2xl"/>
           </Link>
         </div>
 
-            <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
+            <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center sm:text-left">
               Helping businesses build their tomorrow, today. Contact us to
               bring your ideas to life.
             </p>

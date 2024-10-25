@@ -17,6 +17,7 @@ import Socials from "../Socials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Tunirise from "../Tunirise";
 
 
 const Hero = () => {
@@ -46,9 +47,9 @@ const Hero = () => {
               </div>
               <h1
                 className="hero-title secondary"
-                style={{ fontFamily: "AgainstRegular" }}
+                
               >
-                TUNIRISE
+                <Tunirise triseSize="sm:text-8xl text-5xl" unSize="sm:text-7xl text-4xl"/>
               </h1>
 
               {/* <h1 className='h1 mb-4'>Univers Automatisme</h1> */}
