@@ -3,7 +3,7 @@ import React from "react";
 export default function Tunirise({containerStyles,triseSize,unSize}) {
   return (
     <div className={`${containerStyles}`}>
-      <span className={`cursor-pointer text-primary ml-3 HammersmithOne ${triseSize}`} >
+      <span className={`cursor-pointer text-primary  HammersmithOne ${triseSize}`} >
         T
       </span>
       <span className={`cursor-pointer text-primary MonumentExtended ${unSize}`}>

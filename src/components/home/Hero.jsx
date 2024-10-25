@@ -49,7 +49,7 @@ const Hero = () => {
                 className="hero-title secondary"
                 
               >
-                <Tunirise triseSize="sm:text-8xl text-5xl" unSize="sm:text-7xl text-4xl"/>
+                <Tunirise triseSize="sm:text-8xl text-6xl" unSize="sm:text-7xl text-5xl"/>
               </h1>
 
               {/* <h1 className='h1 mb-4'>Univers Automatisme</h1> */}
