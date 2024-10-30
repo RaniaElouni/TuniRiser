@@ -52,9 +52,21 @@ module.exports = {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#02154d",
+          DEFAULT: "#50e2d4",
           foreground: "hsl(var(--secondary-foreground))",
+          lighter: "#f0fdfc",
+          50: "#e0f9f7",  // Lightest shade
+          100: "#c2f3f0",
+          200: "#a3ece8",
+          300: "#85e6e1",
+          400: "#66dfd9",
+          500: "#50e2d4",  // Original color
+          600: "#41b8ac",
+          700: "#329082",
+          800: "#24675a",
+          900: "#153f32"   // Darkest shade
         },
+        
         tertiary: {
           DEFAULT: "hsl(var(--tertiary))",
         },
@@ -113,6 +125,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        rotate: {
+          '0%': { transform: 'perspective(1000px) rotateY(0deg)'},
+          '100%': { transform: 'perspective(1000px) rotateY(360deg)'}
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -188,9 +204,11 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "infinite-scroll": "infinite-scroll 25s linear infinite",
         'border': 'border 4s linear infinite',
+        rotate: 'rotate 30s linear infinite',
       },
       backgroundImage: {
         hero: "url(/hero/hero-bg.png)",
+        cta_img: "url('/media/mic.png')",
         hero_shape: "url(/hero/shape-1.svg)",
         hero_shape2_light: "url(/hero/shape-2-light.svg)",
         hero_shape2_dark: "url(/hero/shape-2-dark.svg)",

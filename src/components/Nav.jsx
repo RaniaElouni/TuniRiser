@@ -1,11 +1,8 @@
-// link (next js)
 import Link from 'next/link';
-
-// next hooks
 import { usePathname } from 'next/navigation';
-
-// framer motion
 import { motion } from 'framer-motion';
+import Dropdown from './ui/Dropdown';
+
 
 const links = [
   { path: '/', name: 'Home' },
@@ -13,32 +10,46 @@ const links = [
   { path: '/contact', name: 'Contact' },
 ];
 
+const services = [
+  { path: '/media', name: 'Media Services' },
+  { path: '/web-dev', name: 'Web Development Services' },
+];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet }) => {
+const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
   const path = usePathname();
+
   return (
     <nav className={`${containerStyles}`}>
-      {links.map((link, index) => {
-        return (
-          <Link
-            href={link.path}
-            key={index}
-            className={` ${linkStyles}`}
-            onClick={closeSheet}
-          >
-            {link.path === path && (
-              <motion.span
-                initial={{ y: '-100%' }}
-                animate={{ y: 0 }}
-                transition={{ type: 'tween' }}
-                layoutId='underline'
-                className={`${underlineStyles}`}
-              />
-            )}
-            {link.name}
-          </Link>
-        );
-      })}
+      {links.map((link, index) => (
+        <Link
+          href={link.path}
+          key={index}
+          className={linkStyles}
+          onClick={closeSheet}
+        >
+          {link.path === path && (
+            <motion.span
+              initial={{ y: '-100%' }}
+              animate={{ y: 0 }}
+              transition={{ type: 'tween' }}
+              layoutId='underline'
+              className={`${underlineStyles}`}
+            />
+          )}
+          {link.name}
+        </Link>
+      ))}
+
+      {/* Services Dropdown */}
+      <Dropdown
+          fn={closeSheet}
+
+        title="Services"
+        options={services}
+        buttonStyles="px-4 py-2 text-white  bg-primary  rounded"
+        menuStyles="w-44"
+        itemStyles="text-gray-700 hover:text-gray-900"
+      />
     </nav>
   );
 };

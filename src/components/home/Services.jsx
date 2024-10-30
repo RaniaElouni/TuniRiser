@@ -150,7 +150,7 @@ const Services = () => {
             <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
               {servicesData.map((item, index) => (
                 <Card
-                  className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                  className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                   key={index}
                 >
                   <CardHeader className="text-primary absolute -top-[60px]">
@@ -174,7 +174,7 @@ const Services = () => {
             <div className="grid xl:grid-cols-3 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
               {mediaServicesData.map((item, index) => (
                 <Card
-                  className="xl:w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                  className="xl:w-full  transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                   key={index}
                 >
                   <CardHeader className="text-primary absolute -top-[60px]">

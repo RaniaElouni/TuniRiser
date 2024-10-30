@@ -26,14 +26,7 @@ function Head() {
     AOS.refresh();
   }, []);
 
-  const hero_content = {
-    title: ["TUNIRISE"],
-    description:
-      "Univers Automatisme est votre partenaire d'excellence pour l'intégration des nouvelles technologies.",
-    button: "Get Started",
-    play_button: "Voir Démo",
-  };
-  const { isOpen, toggle, close } = useToggle();
+
 
   return (
     <div

@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex title-font font-medium items-end md:justify-start justify-center text-gray-900">
           <Image width={50} height={50} src={logo} alt="Tunirise Logo" className="mb-1"/>
           <Link href="/">
-          <Tunirise triseSize="text-3xl ml-3" unSize="text-2xl"/>
+          <Tunirise triseSize="text-3xl" unSize="text-2xl"/>
           </Link>
         </div>
 
