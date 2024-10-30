@@ -61,7 +61,7 @@ function StatsSection() {
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center  px-4 h-[75px] w-[100%] md:w-[281px] md:h-[100px] rounded-lg justify-self-center"
+          className="flex flex-col justify-center items-center gap-3  px-4 h-[125px] w-[100%] md:w-[281px] mdh-[100px] rounded-lg justify-self-center"
         >
           <div className="flex flex-row justify-center items-center">
             {card.svgPath}
@@ -119,13 +119,13 @@ export default function page() {
                     <div className="relative mb-5 flex items-center justify-center ">
                       <a
                         href="#"
-                        className="flex items-center justify-center py-2 px-4 text-lg w-[50%] text-white bg-primary rounded-full shadow-md transition-transform transform hover:scale-105"
+                        className="flex items-center justify-center py-2 px-4 md:text-lg text-sm md:w-[50%] text-white bg-primary rounded-full shadow-md transition-transform transform hover:scale-105"
                         style={{ boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)" }}
                       >
                         Let's elevate your brand's story
                       </a>
 
-                      <div className="absolute w-[50%]  -bottom-1 -left[15rem]  h-full  rounded-full border-2 border-primary opacity-50 animate-pulse"></div>
+                      <div className="absolute md:w-[50%]  -bottom-1 -left[15rem]  h-full  rounded-full border-2 border-primary opacity-50 animate-pulse"></div>
                     </div>
 
                     <h1
@@ -133,7 +133,7 @@ export default function page() {
                         fontFamily: "AgainstRegular",
                         lineHeight: "70px",
                       }}
-                      className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
+                      className="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
                     >
                       YOUR BRAND'S STORY DESERVES TO BE HEARD{" "}
                       <span className="inline-flex mb-4">
@@ -149,7 +149,7 @@ export default function page() {
                       </span>
                     </h1>
 
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl md:px-4 dark:text-gray-400">
+                    <p className="mb-8 text-sm font-normal text-gray-500 lg:text-xl md:px-4 dark:text-gray-400">
                       At Tunirise, we help your brand's story shine through
                       video production, social media management, and graphic
                       design. Let’s create content that captivates your
