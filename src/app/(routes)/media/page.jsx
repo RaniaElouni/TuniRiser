@@ -1,4 +1,4 @@
-import Hero from "@/components/media/hero";
+import Hero from "@/components/media/Hero";
 import SoundQuality from "@/components/media/SoundQuality";
 
 
