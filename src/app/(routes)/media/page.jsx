@@ -41,7 +41,7 @@ const cardData = [
     ),
   },
   {
-    title: "Trusted By Industry Leaders",
+    title: "Trusted By Leaders",
     description: "Our long-standing partnerships are a testament to our commitment and the trust clients place in our expertise.",
     svgPath: (
       <svg class="w-[30] h-[30px] fill-[#FE6E33]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
@@ -131,9 +131,10 @@ export default function page() {
                     <h1
                       style={{
                         fontFamily: "AgainstRegular",
-                        lineHeight: "70px",
+                        
                       }}
-                      className="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
+                      className="mb-4 lg:leading-[70px] leading-[42px] text-2xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
+                      
                     >
                       YOUR BRAND&apos;S STORY DESERVES TO BE HEARD{" "}
                       <span className="inline-flex mb-4">
