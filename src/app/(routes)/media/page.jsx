@@ -69,7 +69,7 @@ function StatsSection() {
               {card.value}
             </p>
           </div>
-          <p className="font-medium text-base sm:text-md leading-6 mt-3 md:mt-4 text-center">
+          <p className="text-sm font-normal text-gray-500 lg:text-xl md:px-4 dark:text-gray-400 text-center">
             {card.title}
           </p>
         </div>
