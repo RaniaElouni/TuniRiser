@@ -122,7 +122,7 @@ export default function page() {
                         className="flex items-center justify-center py-2 px-4 md:text-lg text-sm md:w-[50%] text-white bg-primary rounded-full shadow-md transition-transform transform hover:scale-105"
                         style={{ boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)" }}
                       >
-                        Let's elevate your brand's story
+                        Let&apos;s elevate your brand&apos;s story
                       </a>
 
                       <div className="absolute md:w-[50%]  -bottom-1 -left[15rem]  h-full  rounded-full border-2 border-primary opacity-50 animate-pulse"></div>
@@ -135,7 +135,7 @@ export default function page() {
                       }}
                       className="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
                     >
-                      YOUR BRAND'S STORY DESERVES TO BE HEARD{" "}
+                      YOUR BRAND&apos;S STORY DESERVES TO BE HEARD{" "}
                       <span className="inline-flex mb-4">
                         <svg
                           className="text-[#ff695c] animate-pulse"
@@ -150,9 +150,9 @@ export default function page() {
                     </h1>
 
                     <p className="mb-8 text-sm font-normal text-gray-500 lg:text-xl md:px-4 dark:text-gray-400">
-                      At Tunirise, we help your brand's story shine through
+                      At Tunirise, we help your brand&apos;s story shine through
                       video production, social media management, and graphic
-                      design. Let’s create content that captivates your
+                      design. Let&apos;s create content that captivates your
                       audience!
                     </p>
                   </div>
