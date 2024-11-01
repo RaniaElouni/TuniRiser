@@ -126,7 +126,7 @@ export default function Hero() {
                         Let&apos;s elevate your brand&apos;s story
                       </a>
 
-                      <div className="absolute md:w-[50%]  -bottom-1 -left[15rem]  h-full  rounded-full border-2 border-primary opacity-50 animate-pulse"></div>
+                      <div className="absolute sm:w-[50%] w-[45%] -bottom-1 -left[15rem]  h-full  rounded-full border-2 border-primary opacity-50 animate-pulse"></div>
                     </div>
 
                     <h1
