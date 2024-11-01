@@ -2,7 +2,7 @@ import React from 'react'
 const cardData = [
   {
     title: "24/7 Client Support",
-    description: "We’re here around the clock to assist and listen to our clients, providing timely responses to ensure satisfaction and success.",
+   
     svgPath: (
       <svg class="w-[30px] h-[30px] fill-[#FE6E33]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 
@@ -16,7 +16,7 @@ const cardData = [
   },
   {
     title: "Quality from Experts",
-    description: "Our products and services are crafted by industry experts, ensuring high quality and reliability for each project.",
+   
     svgPath: (
       <svg class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" viewBox="0 0 50 50" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ const cardData = [
   },
   {
     title: "Tailored Solutions",
-    description: "We adapt to your unique needs, creating customized solutions that fit seamlessly into your business model.",
+    
     svgPath: (
       <svg class="w-[30px] h-[30px] fill-[#FE6E33]" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
 
@@ -43,7 +43,7 @@ const cardData = [
   },
   {
     title: "Trusted By Leaders",
-    description: "Our long-standing partnerships are a testament to our commitment and the trust clients place in our expertise.",
+   
     svgPath: (
       <svg class="w-[30] h-[30px] fill-[#FE6E33]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
 

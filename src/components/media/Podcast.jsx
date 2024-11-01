@@ -22,7 +22,7 @@ export default function Podcast() {
                 </div>
               </div>
               <h3 class="font-black text-gray-800 md:text-3xl text-xl">
-                Elevate Your Brand's Voice with Professional Podcasts
+                Elevate Your Brand&apos;s Voice with Professional Podcasts
               </h3>
               <p class="md:text-lg text-gray-500 text-base">
                 Tunirise provides full podcast production, managing everything
