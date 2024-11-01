@@ -19,7 +19,7 @@ export default function Heading({tit1,tit2,withLottie}) {
           </h2>
 
           <h2
-            className={`opacity-20 z-50  ${tit1==="OUR TEAM" ? "mx-12":""} text-[0.9rem]   lg:text-4xl xl:text-5xl`}
+            className={`opacity-20 z-50  ${tit1==="OUR TEAM" ? "mx-12":""} text-[1.4rem]   lg:text-4xl xl:text-5xl`}
             style={{
               fontFamily: "AgainstRegular",
 
