@@ -5,7 +5,7 @@ import Heading from "../Heading";
 import mic from "../../../public/media/mic.json"
 export default function Podcast() {
   return (
-    <div className="xl:pb-48 lg:pb-32 md:pb-24 sm:pb-16 pb-12 overflow-hidden mx-4">
+    <div className="xl:pb-48 lg:pb-32 md:pb-24 sm:pb-16 pb-12 overflow-hidden mx-4 ">
       <div className="relative sm:px-[6.3rem]">
         <div className="mt-24 mb-16">
           <Heading tit1="PODCAST studio" tit2="PRODUCTION" withLottie={mic} />
@@ -61,13 +61,7 @@ export default function Podcast() {
             
           </div>
           <div className="absolute w-full  -bottom-2 z-50 left-[0.5rem] text-secondary opacity-2 h-full sound-wave opacity-50 animate-pulse"></div>
-          <div
-            aria-hidden="true"
-            class="flex absolute -top-20 start-3/4 z-20 transform -translate-x-1/2"
-          >
-            <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl w-[55rem] h-[5rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
-            <div class="bg-gradient-to-r from-[#50e2d4]/70 to-purple-100 blur-3xl w-[95rem] h-[20rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
-          </div>
+          
         </div>
       </div>
     </div>
