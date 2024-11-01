@@ -1,11 +1,11 @@
-"use client" 
+"use client";
 import React from "react";
 import Heading from "../Heading";
 import Lottie from "lottie-react";
-import marketing from "../../../public/media/marketing.json"
+import marketing from "../../../public/media/marketing.json";
 export default function MarketingStra() {
   return (
-    <div className="pb-48 overflow-hidden">
+    <div className="pb-48 overflow-hidden px-4">
       <div className="relative sm:px-[6.3rem]">
         <div className="mt-24 mb-16">
           <Heading tit1="Marketing strategie" tit2="" />
@@ -13,15 +13,18 @@ export default function MarketingStra() {
         <div class="flex relative flex-col mt-20 ">
           <div class="relative flex flex-col md:flex-row z-40 md:space-x-5  space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 w-full border border-white bg-white">
             <div class="bg-white z-60 grid place-items-center">
-          <Lottie animationData={marketing} loop={true}    className="rounded-xl md:w-64 z-60" />
-
+              <Lottie
+                animationData={marketing}
+                loop={true}
+                className="rounded-xl md:w-64 z-60"
+              />
             </div>
             <div class="w-full bg-white flex flex-col space-y-2 p-3">
-              <div class="flex justify-between items-center md:my-4">
+              <div class="flex justify-between items-center my-4">
                 <p class="text-gray-500 font-medium hidden md:block">
                   Strategic Media Production
                 </p>
-                <div class="bg-[#FE6E3320] px-3 py-1 rounded-full text-xs font-medium text-primary hidden md:block">
+                <div class="bg-[#FE6E3320] px-3 py-1 rounded-full text-xs font-medium text-primary md:block">
                   Proven Results
                 </div>
               </div>
@@ -34,27 +37,37 @@ export default function MarketingStra() {
                 connections and sustainable engagement across all platforms.
               </p>
               <div class="flex space-x-4 my-4">
-              <div className="flex items-center text-gray-600">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
-    viewBox="0 0 24 24"
-  >
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 1 }} />
-        <stop offset="100%" style={{ stopColor: '#9333ea', stopOpacity: 1 }} />
-      </linearGradient>
-    </defs>
-    <path
-      d="M12 2a10 10 0 110 20 10 10 0 010-20zM10.5 7h3a1 1 0 110 2h-1.5v8a1 1 0 11-2 0V9H10a1 1 0 010-2zm-4 5h2a1 1 0 010 2h-2a1 1 0 010-2zm10 0h2a1 1 0 010 2h-2a1 1 0 010-2z"
-      fill="url(#gradient)"
-    />
-  </svg>
-  <p className="ml-1 text-sm">Tailored Campaigns</p>
-</div>
-
-
+                <div className="flex items-center text-gray-600 my-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    viewBox="0 0 24 24"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="gradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop
+                          offset="0%"
+                          style={{ stopColor: "#3b82f6", stopOpacity: 1 }}
+                        />
+                        <stop
+                          offset="100%"
+                          style={{ stopColor: "#9333ea", stopOpacity: 1 }}
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12 2a10 10 0 110 20 10 10 0 010-20zM10.5 7h3a1 1 0 110 2h-1.5v8a1 1 0 11-2 0V9H10a1 1 0 010-2zm-4 5h2a1 1 0 010 2h-2a1 1 0 010-2zm10 0h2a1 1 0 010 2h-2a1 1 0 010-2z"
+                      fill="url(#gradient)"
+                    />
+                  </svg>
+                  <p className="ml-1 text-sm">Tailored Campaigns</p>
+                </div>
 
                 <div class="flex items-center text-gray-600 my-4">
                   <svg
@@ -73,7 +86,7 @@ export default function MarketingStra() {
           <div className="absolute w-full  -bottom-2 z-50 left-[0.5rem] text-secondary opacity-2 h-full sound-wave opacity-50 animate-pulse"></div>
           <div
             aria-hidden="true"
-            class="flex absolute -top-20 start-3/4 z-20 transform -translate-x-1/2"
+            class="flex absolute -top-80 start-3/4 z-20 transform -translate-x-1/2"
           >
             <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl w-[55rem] h-[5rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
             <div class="bg-gradient-to-r from-[#50e2d4]/70 to-purple-100 blur-3xl w-[95rem] h-[20rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
