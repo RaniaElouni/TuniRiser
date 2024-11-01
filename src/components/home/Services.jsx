@@ -124,7 +124,7 @@ const Services = ({ isMedia  }) => {
 
   return (
     <section className="z-50" data-aos="fade-right">
-      <div className="mx-auto xl:container md:container sm:container mx-auto z-50">
+      <div className="mx-auto xl:container md:container sm:container sm:mx-0 z-50">
         <div className="mb-24 ">
           <Heading
             tit1={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
@@ -156,10 +156,10 @@ const Services = ({ isMedia  }) => {
           {/* Web Development Services */}
           {!isMedia && (
             <TabsContent value="company-info">
-              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+              <div className="grid  xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8  mx-[2rem]">
                 {servicesData.map((item, index) => (
                   <Card
-                    className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                    className="w-full  transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                     key={index}
                   >
                     <CardHeader className="text-primary absolute -top-[60px]">
@@ -181,7 +181,7 @@ const Services = ({ isMedia  }) => {
 
           {/* Media Services */}
           {isMedia ? (
-            <div className="grid z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
+            <div className="grid  mx-[2rem] z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
               {mediaServicesData.map((item, index) => (
                 <Card
                   className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
