@@ -14,7 +14,7 @@ export default function Heading({tit1,tit2,withLottie}) {
             }}
           >
             {tit1}
-          {withLottie &&  <Lottie animationData={withLottie} loop={true}  className="xl:w-[6rem] mb-2 lg:w-[5rem] md:w-[4rem] sm:w-[3rem] w-[2rem]" />} 
+          {withLottie &&  <Lottie animationData={withLottie} loop={true}  className="xl:w-[6rem] mb-2 lg:w-[5rem] md:w-[4rem] sm:w-[3rem] w-[3rem]" />} 
 
           </h2>
 
