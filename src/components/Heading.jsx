@@ -1,19 +1,25 @@
-import React from 'react'
+"use client"
 
-export default function Heading({tit1,tit2}) {
+import React from 'react'
+import Lottie  from "lottie-react";
+
+
+export default function Heading({tit1,tit2,withLottie}) {
   return (
-    <div className={`flex flex-col md:flex-row justify-between items-center ${tit1 !== "ABOUT US" ? "mb-12 ":"" }xl:mb-12 `}>
+    <div className={`flex z-50 flex-col md:flex-row justify-between items-center ${tit1 !== "ABOUT US" ? "mb-12 ":"" }xl:mb-12 `}>
           <h2
-            className="section-title text-sm text-center md:text-left"
+            className="section-title text-sm text-center md:text-left lg:text-4xl xl:text-5xl"
             style={{
               fontFamily: "AgainstRegular",
             }}
           >
             {tit1}
+          {withLottie &&  <Lottie animationData={withLottie} loop={true}  className="xl:w-[6rem] mb-2 lg:w-[5rem] md:w-[4rem] sm:w-[3rem] w-[2rem]" />} 
+
           </h2>
 
           <h2
-            className={`opacity-20 ${tit1==="OUR TEAM" ? "mx-12":""} text-2xl md:text-7xl`}
+            className={`opacity-20 z-50 lg:text-4xl ${tit1==="OUR TEAM" ? "mx-12":""} text-2xl  xl:text-5xl`}
             style={{
               fontFamily: "AgainstRegular",
 

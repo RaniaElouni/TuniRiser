@@ -14,7 +14,7 @@ import {
   Camera,
   Lightbulb,
   Wrench,
-  UserCheck
+  UserCheck,
 } from "lucide-react";
 import {
   Card,
@@ -23,7 +23,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
+import media from "../../../public/media/media.json"
 // Web Development Services
 const servicesData = [
   {
@@ -104,7 +104,6 @@ const mediaServicesData = [
   },
 ];
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -112,7 +111,7 @@ import { useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Heading from "../Heading";
 
-const Services = () => {
+const Services = ({ isMedia  }) => {
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -124,57 +123,68 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="" data-aos="fade-right">
-      <div className="mx-auto xl:container md:container sm:container mx-auto ">
+    <section className="z-50" data-aos="fade-right">
+      <div className="mx-auto xl:container md:container sm:container mx-auto z-50">
         <div className="mb-24 ">
-          <Heading tit1="OUR SERVICES" tit2="OUR SERVICES" />
+          <Heading
+            tit1={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
+            tit2={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
+            withLottie={media}
+          />
         </div>
 
         <Tabs defaultValue="company-info">
           <div className="flex justify-center">
-            <TabsList className="w-full xl:grid xl:grid-cols-2 xl:max-w-[520px] border">
-              <TabsTrigger
-                className="w-[230px] xl:w-auto"
-                value="secteur-d'activité"
-              >
-                MEDIA
-              </TabsTrigger>
-              <TabsTrigger className="w-[230px] xl:w-auto" value="company-info">
-                DÉVELOPPEMENT WEB
-              </TabsTrigger>
-            </TabsList>
+            {!isMedia && (
+              <TabsList className="w-full xl:grid xl:grid-cols-2 xl:max-w-[520px] border">
+                <TabsTrigger
+                  className="w-[230px] xl:w-auto"
+                  value="secteur-d'activité"
+                >
+                  MEDIA
+                </TabsTrigger>
+                <TabsTrigger
+                  className="w-[230px] xl:w-auto"
+                  value="company-info"
+                >
+                  DÉVELOPPEMENT WEB
+                </TabsTrigger>
+              </TabsList>
+            )}
           </div>
 
           {/* Web Development Services */}
-          <TabsContent value="company-info">
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
-              {servicesData.map((item, index) => (
-                <Card
-                  className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                  key={index}
-                >
-                  <CardHeader className="text-primary absolute -top-[60px]">
-                    <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                      {item.icon}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <CardTitle className="mb-4">{item.title}</CardTitle>
-                    <CardDescription className="text-lg">
-                      {item.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
+          {!isMedia && (
+            <TabsContent value="company-info">
+              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+                {servicesData.map((item, index) => (
+                  <Card
+                    className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                    key={index}
+                  >
+                    <CardHeader className="text-primary absolute -top-[60px]">
+                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                        {item.icon}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <CardTitle className="mb-4">{item.title}</CardTitle>
+                      <CardDescription className="text-lg">
+                        {item.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+          )}
 
           {/* Media Services */}
-          <TabsContent value="secteur-d'activité">
-            <div className="grid xl:grid-cols-3 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+          {isMedia ? (
+            <div className="grid z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
               {mediaServicesData.map((item, index) => (
                 <Card
-                  className="xl:w-full  transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                  className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                   key={index}
                 >
                   <CardHeader className="text-primary absolute -top-[60px]">
@@ -191,7 +201,30 @@ const Services = () => {
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          ) : (
+            <TabsContent value="secteur-d'activité">
+              <div className="grid xl:grid-cols-3 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+                {mediaServicesData.map((item, index) => (
+                  <Card
+                    className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                    key={index}
+                  >
+                    <CardHeader className="text-primary absolute -top-[60px]">
+                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                        {item.icon}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <CardTitle className="mb-4">{item.title}</CardTitle>
+                      <CardDescription className="text-lg">
+                        {item.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+          )}
         </Tabs>
       </div>
     </section>
