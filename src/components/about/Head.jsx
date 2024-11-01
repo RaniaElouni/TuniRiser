@@ -30,8 +30,16 @@ function Head() {
 
   return (
     <div
-      className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
+      className={`relative overflow-x-hidden `}
     >
+         <div
+          aria-hidden="true"
+          class="flex absolute -top-96 start-3/4 transform -translate-x-1/2"
+        >
+          <div class="bg-gradient-to-r from-[#50e2d4]/70 to-purple-100 blur-3xl w-[55rem] h-[38rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
+          <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl w-[90rem] h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
+        </div>
+
       <section className="head py-12 mt-16 xl:py-24 lg:h-[84vh] relative flex min-h-full w-full flex-col sm:place-content-center px-4 dark:bg-none">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a

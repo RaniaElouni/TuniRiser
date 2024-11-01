@@ -124,7 +124,7 @@ const Services = ({ isMedia  }) => {
 
   return (
     <section className="z-50" data-aos="fade-right">
-      <div className="mx-auto xl:container md:container sm:container sm:mx-0 z-50">
+      <div className={`mx-auto xl:container md:container sm:container sm:mx-16  z-50`}>
         <div className="mb-24 ">
           <Heading
             tit1={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}

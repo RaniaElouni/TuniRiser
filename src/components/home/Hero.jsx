@@ -34,6 +34,7 @@ const Hero = () => {
     <div
       className={`${"bg-hero bg-no-repeat bg-bottom bg-cover"} overflow-x-hidden `}
     >
+      
       <section
         className="py-12 mt-16 xl:py-10 lg:h-[84vh]  min-h-full dark:bg-none"
         data-aos="fade-right"
@@ -63,11 +64,11 @@ const Hero = () => {
                 <Link href="/contact">
                   <Button className="gap-x-2 text-white">Contact Us</Button>
                 </Link>
-                <Link href="/about">
-                  <Button variant="secondary" className="gap-x-2">
+                {/* <Link href="/about">
+                  <Button variant="" className="gap-x-2 bg-[#FE6E3330]">
                     About Us
                   </Button>
-                </Link>
+                </Link> */}
               </div>
               {/* socials */}
               <Socials
