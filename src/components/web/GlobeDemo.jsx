@@ -407,7 +407,7 @@ export function GlobeDemo() {
           <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl sm:w-[90rem]  h-[40rem] w-[20rem] sm:h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
         </div>
       <div
-        className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem]  ">
+        className="max-w-7xl mx-auto w-full   relative overflow-hidden h-full md:h-[40rem]  ">
         <motion.div
           initial={{
             opacity: 0,
@@ -422,7 +422,7 @@ export function GlobeDemo() {
           }}
           className="div">
           <h2
-            className="text-center text-xl mt-12 md:text-4xl font-bold text-black dark:text-white " style={{
+            className="text-center px-6 text-xl mt-12 md:text-4xl font-bold text-black dark:text-white " style={{
               fontFamily: "AgainstRegular",
               
             }}>
@@ -436,8 +436,8 @@ export function GlobeDemo() {
     <div className="pt-[62px] ">
 
         <div
-          className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-6 h-72 h-[90%] flex justify-center ">
+          className="absolute w-full bottom-0 inset-x-0 h-40  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        <div className="absolute w-full -bottom-6 sm:h-[50%] h-[90%] flex justify-center ">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
