@@ -397,6 +397,7 @@ export function GlobeDemo() {
 
   return (
     (
+      
     <div
       className="flex relative overflow-x-hidden flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
         <div
@@ -407,7 +408,7 @@ export function GlobeDemo() {
           <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl sm:w-[90rem]  h-[60rem] w-[20rem] sm:h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
         </div>
       <div
-        className="max-w-7xl mx-auto w-full   relative overflow-hidden h-full md:h-[40rem]  ">
+        className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem]  ">
         <motion.div
           initial={{
             opacity: 0,

@@ -4,6 +4,7 @@ import React from 'react'
 import { Preview } from '@/components/web/Preview'
 import { BackgroundAnim } from "@/components/web/BackgroundAnim"
 import { GlobeDemo } from "@/components/web/GlobeDemo"
+import Services from '@/components/home/Services';
 
 
 
@@ -695,8 +696,12 @@ export default function page() {
     //   </footer>
     // </div>
 
-  
-<GlobeDemo/>
+  <div>
 
+<GlobeDemo/>
+<Services isWeb={true} />
+
+
+  </div>
   )
 }
