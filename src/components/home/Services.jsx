@@ -126,7 +126,7 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
       <div className="mx-auto xl:container md:container sm:container sm:mx-16 z-50">
         <div className="mb-24">
         <Heading
-            tit1={isMedia ? "MEDIA SERVICES" : isWeb ? "WEB DEVELOPMENT SERVICES" : "OUR SERVICES"}
+            tit1={isMedia ? "MEDIA SERVICES" : isWeb ? "WEB DEVELOPMENT" : "OUR SERVICES"}
             tit2={isMedia ? "MEDIA SERVICES" : isWeb ? "SERVICES" : "OUR SERVICES"}
             withLottie={fromMedia ? media : undefined}
           />
