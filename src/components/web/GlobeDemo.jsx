@@ -429,7 +429,7 @@ export function GlobeDemo() {
            Your Vision, Our Global Reach
           </h2>
           <p
-            className="text-center sm:block hidden text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200  mt-2 mx-auto">
+            className="text-center sm:block px-2 text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200  mt-2 mx-auto">
            Unlock international opportunities by developing applications that reach customers everywhere
           </p>
         </motion.div>
@@ -437,7 +437,7 @@ export function GlobeDemo() {
 
         <div
           className="absolute w-full bottom-0 inset-x-0 h-40  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-6 sm:h-[50%] h-[90%] flex justify-center ">
+        <div className="absolute w-full -bottom-6 sm:h-[90%] h-[80%] flex justify-center ">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
