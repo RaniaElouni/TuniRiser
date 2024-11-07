@@ -111,7 +111,7 @@ import { useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Heading from "../Heading";
 
-const Services = ({ isMedia  }) => {
+const Services = ({ isMedia ,fromMedia }) => {
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -126,11 +126,12 @@ const Services = ({ isMedia  }) => {
     <section className="z-50" data-aos="fade-right">
       <div className={`mx-auto xl:container md:container sm:container sm:mx-16  z-50`}>
         <div className="mb-24 ">
-          <Heading
-            tit1={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
-            tit2={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
-            withLottie={media}
-          />
+        <Heading
+  tit1={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
+  tit2={isMedia ? "MEDIA SERVICES" : "OUR SERVICES"}
+  withLottie={fromMedia ? media : undefined}
+/>
+
         </div>
 
         <Tabs defaultValue="company-info">

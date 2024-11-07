@@ -5,7 +5,7 @@ import media from "../../../public/media/media.json"
 export default function Services() {
   return (
     <div className="  overflow-hidden">
-      <Servicess isMedia={true}  />
+      <Servicess isMedia={true} fromMedia={true} />
       
      
     </div>

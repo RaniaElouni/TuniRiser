@@ -38,10 +38,7 @@ module.exports = {
         },
        
       },
-      animation: {
-        'border-spin': 'border-spin 7s linear infinite',
-       
-      },
+     
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -91,6 +88,43 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sky: {
+          300: '#60a5fa',
+          400: '#3b82f6',
+        },
+        pink: {
+          300: '#f472b6',
+          400: '#ec4899',
+        },
+        green: {
+          300: '#4ade80',
+          400: '#22c55e',
+        },
+        yellow: {
+          300: '#facc15',
+          400: '#eab308',
+        },
+        red: {
+          300: '#f87171',
+          400: '#ef4444',
+        },
+        purple: {
+          300: '#c084fc',
+          400: '#a855f7',
+        },
+        blue: {
+          300: '#60a5fa',
+          400: '#3b82f6',
+        },
+        indigo: {
+          300: '#818cf8',
+          400: '#6366f1',
+        },
+        violet: {
+          300: '#a78bfa',
+          400: '#8b5cf6',
+        },
+      
         green: {
           100: "#FE6E33",
           DEFAULT: "#FE6E33",
@@ -199,6 +233,14 @@ module.exports = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        "radar-spin": {
+          from: {
+            transform: "rotate(20deg)",
+          },
+          to: {
+            transform: "rotate(380deg)",
+          },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -206,6 +248,9 @@ module.exports = {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
         'border': 'border 4s linear infinite',
         rotate: 'rotate 30s linear infinite',
+        "radar-spin": "radar-spin 10s linear infinite",
+        'border-spin': 'border-spin 7s linear infinite',
+
       },
       backgroundImage: {
         hero: "url(/hero/hero-bg.png)",
