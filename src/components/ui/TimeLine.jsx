@@ -14,7 +14,7 @@ export const Timeline = ({ data }) => {
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
  
-  
+
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
