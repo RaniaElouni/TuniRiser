@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/TimeLine";
-
+import development from "../../../public/web/development.json"
+import Lottie from "lottie-react";
 export function TimelineDemo() {
   const data = [
     {
@@ -50,9 +51,10 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          Create wireframes, prototypes, and UI/UX designs for visualizing the user interface.
+            Create wireframes, prototypes, and UI/UX designs for visualizing the
+            user interface.
           </p>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/web/design1.webp"
@@ -62,21 +64,21 @@ export function TimelineDemo() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-               src="/web/design2.webp"
+              src="/web/design2.webp"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-               src="/web/design3.webp"
+              src="/web/design3.webp"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-               src="/web/design4.webp"
+              src="/web/design4.webp"
               alt="cards template"
               width={500}
               height={500}
@@ -91,39 +93,48 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-          Convert designs into code, set up frontend and backend, and implement functionality.
+            Convert designs into code, set up frontend and backend, and
+            implement functionality.
           </p>
           <div className="mb-8">
-  {[
-    "High-performance optimization",
-    "Responsive design for all devices",
-    "Lazy loading images and components",
-    "Accessibility (WCAG) compliance",
-    "SEO-friendly URL structures",
-    "Cross-browser compatibility",
-    "Client-side and server-side caching",
-    "Security with Content Security Policy (CSP)",
-    "Mobile-first approach",
-    "Code splitting for faster load times"
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm"
-    >
-      ✅ {item}
-    </div>
-  ))}
-</div>
+            {[
+              "High-performance optimization",
+              "Responsive design for all devices",
+              "Lazy loading images and components",
+              
+              "SEO-friendly URL structures",
+              "Cross-browser compatibility",
+              "Client-side and server-side caching",
+            
+              "Mobile-first approach",
+              "Code splitting for faster load times",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm"
+              >
+                ✅ {item}
+              </div>
+            ))}
+          </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+            {/* <Image
+               src="/web/development.json"
               alt="hero template"
-              width={500}
-              height={500}
+              width={1000}
+              height={1000}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
+            /> */}
+            <Lottie
+                    loop
+                    animationData={development}
+                    play
+            //   className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+
+                    style={{ width: 300, height: 300 }} // Adjust size as needed
+                  />
+            {/* <Image
               src="https://assets.aceternity.com/features-section.png"
               alt="feature template"
               width={500}
@@ -143,7 +154,7 @@ export function TimelineDemo() {
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
+            /> */}
           </div>
         </div>
       ),
