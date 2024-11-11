@@ -176,7 +176,7 @@ export function TimelineDemo() {
     }
   ];
   return (
-    <div className="w-full mx-4">
+    <div className="w-full">
       <Timeline data={data} />
     </div>
   );
