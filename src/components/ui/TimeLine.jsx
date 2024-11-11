@@ -38,7 +38,7 @@ export const Timeline = ({ data }) => {
     >
       <Heading tit1={"The Web Creation"} tit2={"Process"}/>
  
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-6 pb-20">
         {data.map((item, index) => (
           <div
             key={index}
