@@ -162,7 +162,8 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
 
             {/* Web Development Services */}
             {isWeb ? (
-              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
+                    <TabsContent value="company-info">
+              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
                 {servicesData.map((item, index) => (
                   <Card
                     className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
@@ -182,6 +183,7 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
                   </Card>
                 ))}
               </div>
+              </TabsContent>
             ) : (
               !isMedia && (
                 <TabsContent value="company-info">
