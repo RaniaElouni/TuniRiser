@@ -123,15 +123,15 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
 
   return (
     <section className="z-50" data-aos="fade-right">
-      <div className="mx-auto xl:container md:container sm:container sm:mx-16 z-50">
-        <div className="mb-24">
+      <div className="mx-auto sm:container sm:mx-16 z-50">
+        <div className="mb-[3rem]">
         <Heading
             tit1={isMedia ? "MEDIA SERVICES" : isWeb ? "WEB DEVELOPMENT" : "OUR SERVICES"}
             tit2={isMedia ? "MEDIA SERVICES" : isWeb ? "SERVICES" : "OUR SERVICES"}
             withLottie={fromMedia ? media : undefined}
           />
         </div>
-
+<div className="mx-4">
         <Tabs defaultValue="company-info">
           <div className="flex justify-center">
             {!isMedia && !isWeb && (
@@ -242,6 +242,7 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
             </TabsContent>
           )}
         </Tabs>
+        </div>
       </div>
     </section>
   );

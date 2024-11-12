@@ -14,7 +14,7 @@ const Page = () => {
   return (
     <div className=" no-scrollbar overflow-y-scroll  overflow-x-hidden  ">
       <Hero />
-      <div className="xl:mt-[19rem] lg:mt-[11rem]">
+      <div className="md:mt-[7rem] mt-14" >
         <Services />
       </div>
       {/* <ProgressSlider /> */}
