@@ -6,8 +6,8 @@ import Dropdown from './ui/Dropdown';
 
 const links = [
   { path: '/', name: 'Home' },
-  { path: '/propos', name: 'About' },
-  { path: '/contact', name: 'Contact' },
+  { path: '/propos', name: 'About' }
+ 
 ];
 
 const services = [
@@ -50,6 +50,24 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
         menuStyles="w-44"
         itemStyles="text-gray-700 hover:text-gray-900"
       />
+    
+         <Link
+          href='/contact'
+   
+          className={linkStyles}
+          onClick={closeSheet}
+        >
+          {'/contact'=== path && (
+            <motion.span
+              initial={{ y: '-100%' }}
+              animate={{ y: 0 }}
+              transition={{ type: 'tween' }}
+              layoutId='underline'
+              className={`${underlineStyles}`}
+            />
+          )}
+        Contact
+        </Link>
     </nav>
   );
 };

@@ -125,54 +125,116 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
     <section className="z-50" data-aos="fade-right">
       <div className="mx-auto sm:container sm:mx-16 z-50">
         <div className="mb-[3rem]">
-        <Heading
-            tit1={isMedia ? "MEDIA SERVICES" : isWeb ? "WEB DEVELOPMENT" : "OUR SERVICES"}
-            tit2={isMedia ? "MEDIA SERVICES" : isWeb ? "SERVICES" : "OUR SERVICES"}
+          <Heading
+            tit1={
+              isMedia
+                ? "MEDIA SERVICES"
+                : isWeb
+                ? "WEB DEVELOPMENT"
+                : "OUR SERVICES"
+            }
+            tit2={
+              isMedia ? "MEDIA SERVICES" : isWeb ? "SERVICES" : "OUR SERVICES"
+            }
             withLottie={fromMedia ? media : undefined}
           />
         </div>
-<div className="mx-4">
-        <Tabs defaultValue="company-info">
-          <div className="flex justify-center">
-            {!isMedia && !isWeb && (
-              <TabsList className="w-full xl:grid xl:grid-cols-2 xl:max-w-[520px] border">
-                <TabsTrigger className="w-[230px] xl:w-auto" value="secteur-d'activité">
-                  MEDIA
-                </TabsTrigger>
-                <TabsTrigger className="w-[230px] xl:w-auto" value="company-info">
-                  DÉVELOPPEMENT WEB
-                </TabsTrigger>
-              </TabsList>
-            )}
-          </div>
-
-          {/* Web Development Services */}
-          {isWeb ? (
-            <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
-              {servicesData.map((item, index) => (
-                <Card
-                  className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                  key={index}
-                >
-                  <CardHeader className="text-primary absolute -top-[60px]">
-                    <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                      {item.icon}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <CardTitle className="mb-4">{item.title}</CardTitle>
-                    <CardDescription className="text-lg">
-                      {item.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
+        <div className="mx-4">
+          <Tabs defaultValue="company-info">
+            <div className="flex justify-center">
+              {!isMedia && !isWeb && (
+                <TabsList className="w-full xl:grid xl:grid-cols-2 xl:max-w-[520px] border">
+                  <TabsTrigger
+                    className="w-[230px] xl:w-auto"
+                    value="secteur-d'activité"
+                  >
+                    MEDIA
+                  </TabsTrigger>
+                  <TabsTrigger
+                    className="w-[230px] xl:w-auto"
+                    value="company-info"
+                  >
+                    DÉVELOPPEMENT WEB
+                  </TabsTrigger>
+                </TabsList>
+              )}
             </div>
-          ) : (
-            !isMedia && (
-              <TabsContent value="company-info">
-                <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
-                  {servicesData.map((item, index) => (
+
+            {/* Web Development Services */}
+            {isWeb ? (
+              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
+                {servicesData.map((item, index) => (
+                  <Card
+                    className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                    key={index}
+                  >
+                    <CardHeader className="text-primary absolute -top-[60px]">
+                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                        {item.icon}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <CardTitle className="mb-4">{item.title}</CardTitle>
+                      <CardDescription className="text-lg">
+                        {item.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              !isMedia && (
+                <TabsContent value="company-info">
+                  <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 py-24 md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
+                    {servicesData.map((item, index) => (
+                      <Card
+                        className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                        key={index}
+                      >
+                        <CardHeader className="text-primary absolute -top-[60px]">
+                          <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                            {item.icon}
+                          </div>
+                        </CardHeader>
+                        <CardContent className="text-center">
+                          <CardTitle className="mb-4">{item.title}</CardTitle>
+                          <CardDescription className="text-lg">
+                            {item.description}
+                          </CardDescription>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </TabsContent>
+              )
+            )}
+
+            {/* Media Services */}
+            {isMedia ? (
+              <div className="grid mx-[2rem] z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
+                {mediaServicesData.map((item, index) => (
+                  <Card
+                    className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                    key={index}
+                  >
+                    <CardHeader className="text-primary absolute -top-[60px]">
+                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                        {item.icon}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <CardTitle className="mb-4">{item.title}</CardTitle>
+                      <CardDescription className="text-lg">
+                        {item.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              <TabsContent value="secteur-d'activité">
+                <div className="grid xl:grid-cols-3 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 md:gap-x-4 mx-[2rem]">
+                  {mediaServicesData.map((item, index) => (
                     <Card
                       className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                       key={index}
@@ -192,56 +254,8 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
                   ))}
                 </div>
               </TabsContent>
-            )
-          )}
-
-          {/* Media Services */}
-          {isMedia ? (
-            <div className="grid mx-[2rem] z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
-              {mediaServicesData.map((item, index) => (
-                <Card
-                  className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                  key={index}
-                >
-                  <CardHeader className="text-primary absolute -top-[60px]">
-                    <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                      {item.icon}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <CardTitle className="mb-4">{item.title}</CardTitle>
-                    <CardDescription className="text-lg">
-                      {item.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          ) : (
-            <TabsContent value="secteur-d'activité">
-              <div className="grid xl:grid-cols-3 py-24 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 md:gap-x-4 mx-[2rem]">
-                {mediaServicesData.map((item, index) => (
-                  <Card
-                    className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                    key={index}
-                  >
-                    <CardHeader className="text-primary absolute -top-[60px]">
-                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                        {item.icon}
-                      </div>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <CardTitle className="mb-4">{item.title}</CardTitle>
-                      <CardDescription className="text-lg">
-                        {item.description}
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
-          )}
-        </Tabs>
+            )}
+          </Tabs>
         </div>
       </div>
     </section>

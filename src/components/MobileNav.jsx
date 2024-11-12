@@ -18,7 +18,7 @@ const MobileNav = () => {
     <div className='px-8'>
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <AlignJustify className='cursor-pointer' onClick={() => setIsOpen(true)} />
+          <AlignJustify className='cursor-pointer px-0 ' onClick={() => setIsOpen(true)} />
         </SheetTrigger>
         <SheetContent>
           <div className='flex flex-col items-center justify-between h-full py-8'>

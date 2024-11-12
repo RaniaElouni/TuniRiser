@@ -13,8 +13,6 @@ const Header = () => {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
 
-  const isAboutPage = pathname === "/propos";
-
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 50 ? setHeader(true) : setHeader(false);
