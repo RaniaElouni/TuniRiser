@@ -36,13 +36,13 @@ const servicesData = [
     icon: <Code2 size={72} strokeWidth={0.8} />,
     title: "Custom Web Development",
     description:
-      "We create modern, high-performance websites and custom web applications tailored specifically to your business needs and goals.",
+      "We create modern, high-performance websites and custom web applications tailored specifically to your business needs.",
   },
   {
     icon: <Phone size={72} strokeWidth={0.8} />,
     title: "Mobile Development",
     description:
-      "We design innovative mobile applications for iOS and Android, focused on enhancing user experience and engagement.",
+      "We design innovative mobile applications for iOS and Android, focused on enhancing user experience .",
   },
   {
     icon: <Monitor size={72} strokeWidth={0.8} />,
@@ -167,20 +167,20 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
                   {servicesData.map((item, index) => (
                     <Card
                       className="w-full transform transition-transform duration-300 hover:scale-105 
-                          md:max-w-[424px] md:h-[300px] flex flex-col md:pt-16 md:pb-10 justify-center items-center relative 
-                        max-w-[320px] h-[220px] pt-10 pb-6 md:hover:scale-102"
+                          md:max-w-[324px] md:h-[250px] flex flex-col md:pt-16 md:pb-10 justify-center items-center relative 
+                        max-w-[320px] h-[180px] pt-10 pb-6 md:hover:scale-102"
                       key={index}
                     >
                       <CardHeader className="text-primary absolute -top-[35px] md:-top-[65px]">
-                        <div className="md:w-[140px] md:h-[80px] bg-white dark:bg-background flex justify-center items-center w-[40px] h-[20px]">
+                        <div className="md:w-[140px] md:h-[80px] bg-white dark:bg-background flex justify-center items-center w-[50px] h-[20px]">
                           {item.icon}
                         </div>
                       </CardHeader>
                       <CardContent className="text-center">
-                        <CardTitle className="md:mb-4 mb-2 md:text-lg text-base">
+                        <CardTitle className="md:mb-4 mb-2  mt-14 md:mt-12 text-xl  md:text-2xl font-bold text-neutral-500 dark:text-neutral-500">
                           {item.title}
                         </CardTitle>
-                        <CardDescription className="md:text-lg text-sm">
+                        <CardDescription className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                           {item.description}
                         </CardDescription>
                       </CardContent>
