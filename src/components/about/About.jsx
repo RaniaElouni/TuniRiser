@@ -80,7 +80,7 @@ export default function About() {
                             </div>
                           </div>
 
-                          <div className="text-slate-500">
+                          <div className="text-slate-500 text-sm">
                             {milestone.details}
                           </div>
                         </div>
