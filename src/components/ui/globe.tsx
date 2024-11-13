@@ -10,7 +10,11 @@ declare module "@react-three/fiber" {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
   }
 }
-
+const markers = [
+  { lat: 37.7749, lng: -122.4194, color: "#ff0000", size: 2 }, // Example for San Francisco
+  { lat: 48.8566, lng: 2.3522, color: "#00ff00", size: 2 },    // Example for Paris
+  // Add more markers as needed
+];
 extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;

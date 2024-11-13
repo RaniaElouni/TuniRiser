@@ -9,28 +9,46 @@ const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
 
 export function GlobeDemo() {
   const globeConfig = {
-    pointSize: 4,
-    // globeColor: "#062056",
-     globeColor: "#50e2d4",
+    pointSize: 5,
+    globeColor: "#50e2d4",
     showAtmosphere: true,
-    atmosphereColor: "#FFFFFF",
-    atmosphereAltitude: 0.1,
-    emissive: "#062056",
-    emissiveIntensity: 0.1,
-    shininess: 0.9,
-    polygonColor: "rgba(255,255,255,0.7)",
+    atmosphereColor: "#50e2d4",
+    atmosphereAltitude: 0.12,
+    emissive: "#00a896",
+    emissiveIntensity: 0.2,
+    shininess: 1,
+    polygonColor: "rgba(255, 255, 255, 0.6)",
     ambientLight: "#38bdf8",
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#ffffff",
-    arcTime: 1000,
-    arcLength: 0.9,
+    directionalLeftLight: "#bde0fe",
+    directionalTopLight: "#caf0f8",
+    pointLight: "#ffafcc",
+    arcTime: 1500,
+    arcLength: 1,
+    arcColorGradient: ["#fe6e33", "#ffafcc"],
+    arcGlow: 0.3,
     rings: 1,
-    maxRings: 3,
-    initialPosition: { lat: 22.3193, lng: 114.1694 },
+    maxRings: 5,
+    initialPosition: { lat: 33.8869, lng: 9.5375 },
     autoRotate: true,
-    autoRotateSpeed: 0.5,
+    autoRotateSpeed: 0.4,
+    interactive: true,
+    showMarkers: true,                    // Enabling markers for key locations
+    markers: [
+      { lat: 33.8869, lng: 9.5375, label: "Tunisia HQ", color: "#fe6e33" },       // Tunisia
+      { lat: 48.8566, lng: 2.3522, label: "Paris Office", color: "#fe6e33" },     // Paris
+      { lat: 40.7128, lng: -74.0060, label: "New York Office", color: "#fe6e33" } // New York
+    ],
+    tooltip: { enabled: true },            // Enable tooltips for markers
+    dayNightCycle: true,                   // Simulate day-night cycle
+    onMarkerHover: (marker) => {
+      console.log(`Hovering over: ${marker.label}`);
+    },
+    onMarkerClick: (marker) => {
+      alert(`Clicked on: ${marker.label}`);
+    }
   };
+  
+  
   const colors = ["#fe6e33", "#fe6e33", "#fe6e33"];
   const sampleArcs = [
     {
@@ -439,7 +457,7 @@ export function GlobeDemo() {
         <div
           className="absolute w-full bottom-0 inset-x-0 h-40  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         <div className="absolute w-full -bottom-6 sm:h-[90%] h-[80%] flex justify-center ">
-          <World data={sampleArcs} globeConfig={globeConfig} />
+          <World data={sampleArcs} globeConfig={globeConfig}   />
         </div>
       </div>
       </div>
