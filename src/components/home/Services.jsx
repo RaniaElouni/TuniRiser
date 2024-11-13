@@ -122,8 +122,8 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
   }, []);
 
   return (
-    <section className="z-50" data-aos="fade-right">
-      <div className="mx-auto sm:container sm:mx-16 z-50">
+    <section className="z-40" data-aos="fade-right">
+      <div className="mx-auto sm:container z-40">
         <div className="mb-[3rem]">
           <Heading
             tit1={
@@ -163,7 +163,7 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
             {/* Web Development Services */}
             {isWeb ? (
               <TabsContent value="company-info">
-                <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 pt-16  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
+                <div className="grid  lg:grid-cols-3 sm:grid-cols-2 gap-12 lg:pt-12 md:gap-x-8 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
                   {servicesData.map((item, index) => (
                     <Card
                       className="w-full transform transition-transform duration-300 hover:scale-105 
@@ -171,8 +171,8 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
                         max-w-[320px] h-[180px] pt-10 pb-6 md:hover:scale-102"
                       key={index}
                     >
-                      <CardHeader className="text-primary absolute -top-[35px] md:-top-[65px]">
-                        <div className="md:w-[140px] md:h-[80px] bg-white dark:bg-background flex justify-center items-center w-[50px] h-[20px]">
+                      <CardHeader className="text-primary absolute -top-[35px] lg:-top-[65px]">
+                        <div className="lg:w-[140px] lg:h-[80px] bg-white dark:bg-background flex justify-center items-center w-[50px] h-[20px]">
                           {item.icon}
                         </div>
                       </CardHeader>
@@ -217,7 +217,7 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
 
             {/* Media Services */}
             {isMedia ? (
-              <div className="grid mx-[2rem] z-50 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
+              <div className="grid mx-[2rem] z-40 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:py-12 justify-center gap-y-12 xl:gap-y-24 md:gap-x-4 xl:gap-x-8">
                 {mediaServicesData.map((item, index) => (
                   <Card
                     className="xl:w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"

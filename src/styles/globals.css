@@ -87,7 +87,7 @@
 }
 
 .section-title {
-  @apply font-bold z-50 relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
+  @apply font-bold z-40 relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
   @apply text-[1.5rem] md:text-3xl xl:text-4xl;
 }
 

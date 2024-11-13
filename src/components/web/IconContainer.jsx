@@ -13,7 +13,7 @@ export const IconContainer = ({ icon, text, delay }) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.2, delay: delay ? delay : 0 }}
       className={twMerge(
-        "relative z-50 flex flex-col items-center justify-center space-y-2"
+        "relative z-40 flex flex-col items-center justify-center space-y-2"
       )}
     >
       <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-secondary bg-[#50E2D430] shadow-inner">

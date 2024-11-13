@@ -83,7 +83,7 @@ export default function MarketingStra() {
               </div>
             </div>
           </div>
-          <div className="absolute w-full  -bottom-2 z-50 left-[0.5rem] text-secondary opacity-2 h-full sound-wave opacity-50 animate-pulse"></div>
+          <div className="absolute w-full  -bottom-2 z-40 left-[0.5rem] text-secondary opacity-2 h-full sound-wave opacity-50 animate-pulse"></div>
           
         </div>
       </div>
