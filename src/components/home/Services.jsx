@@ -162,27 +162,31 @@ const Services = ({ isMedia, fromMedia, isWeb }) => {
 
             {/* Web Development Services */}
             {isWeb ? (
-                    <TabsContent value="company-info">
-              <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 pt-16  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
-                {servicesData.map((item, index) => (
-                  <Card
-                    className="w-full transform transition-transform duration-300 hover:scale-105 max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                    key={index}
-                  >
-                    <CardHeader className="text-primary absolute -top-[60px]">
-                      <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                        {item.icon}
-                      </div>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <CardTitle className="mb-4">{item.title}</CardTitle>
-                      <CardDescription className="text-lg">
-                        {item.description}
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <TabsContent value="company-info">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12 pt-16  md:gap-x-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8 mx-[2rem]">
+                  {servicesData.map((item, index) => (
+                    <Card
+                      className="w-full transform transition-transform duration-300 hover:scale-105 
+                          md:max-w-[424px] md:h-[300px] flex flex-col md:pt-16 md:pb-10 justify-center items-center relative 
+                        max-w-[320px] h-[220px] pt-10 pb-6 md:hover:scale-102"
+                      key={index}
+                    >
+                      <CardHeader className="text-primary absolute -top-[35px] md:-top-[65px]">
+                        <div className="md:w-[140px] md:h-[80px] bg-white dark:bg-background flex justify-center items-center w-[40px] h-[20px]">
+                          {item.icon}
+                        </div>
+                      </CardHeader>
+                      <CardContent className="text-center">
+                        <CardTitle className="md:mb-4 mb-2 md:text-lg text-base">
+                          {item.title}
+                        </CardTitle>
+                        <CardDescription className="md:text-lg text-sm">
+                          {item.description}
+                        </CardDescription>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </TabsContent>
             ) : (
               !isMedia && (
