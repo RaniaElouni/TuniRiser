@@ -13,7 +13,7 @@ export default function page() {
   return (
     <>
       {/* <GlobeDemo /> */}
-      <section class="relative w-full h-full min-h-screen md:pb-24">
+      <section class="relative w-full h-full  md:pb-24">
         <main class=" w-full h-full relative ">
           <div class="flex flex-wrap  ">
             <section class="w-full lg:w-[50%] flex flex-col  @md:px-2  dark:bg-[#5BC4C7]">
