@@ -13,60 +13,88 @@ export default function page() {
   return (
     <>
       {/* <GlobeDemo /> */}
-      <section class="relative w-full h-full min-h-screen">
+      <section class="relative w-full h-full min-h-screen md:pb-24">
         <main class=" w-full h-full relative ">
           <div class="flex flex-wrap  ">
             <section class="w-full lg:w-[50%] flex flex-col  @md:px-2  dark:bg-[#5BC4C7]">
               <section class="w-full  flex-col-reverse  bg-amber-100">
                 <main class="w-full h-[90%] relative flex-col items-start mx-auto pt-24">
-                  <section class="relative overflow-hidden  lg:py-20 lg:py-28">
-                    <div class="relative isolate z-10">
-                      <div class="absolute -z-10 flex -translate-y-1/2 justify-center overflow-hidden inset-x-0 top-1/2 opacity-40">
-                        <svg
-                          class="h-[60rem] w-[100rem] flex-none stroke-amber-600 opacity-40"
-                          aria-hidden="true"
-                        >
-                          <defs>
-                            <pattern
-                              id="e9033f3e-f665-41a6-84ef-756f6778e6fe"
-                              width="200"
-                              height="200"
-                              x="50%"
-                              y="50%"
-                              patternUnits="userSpaceOnUse"
-                              patternTransform="translate(-100 0)"
-                            >
-                              <path d="M.5 200V.5H200" fill="none"></path>
-                            </pattern>
-                          </defs>
-                          <rect
-                            width="100%"
-                            height="100%"
-                            stroke-width="2"
-                            fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)"
-                          ></rect>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-8">
-                      <div class="mx-auto max-w-screen-xl px-2.5 flex flex-col items-center justify-center text-center h-full w-full py-6">
-                        <p
-                          className="text-2xl  lg:text-6xl   lg:leading-[4.5rem] text-center px-4" style={{lineHeight:"5rem"}}
-                        
-                        >
-                           <span className="inline-block mr-2">Unlock</span> 
-                           <span className="inline-block">international</span>
-                          <span className="bg-primary px-3 py-1 lg:py-2 rounded-xl text-white "  >
-                            opportunities
-                          </span>{" "}
-                          by developing applications that
-                          <span className="text-primary px-3">
-                            reach customers everywhere
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </section>
+                  <div className="relative py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                    {/* Background Stars */}
+                    {/* <svg
+                      className="absolute top-0 left-0 w-16 h-16 text-primary opacity-30"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg> */}
+                    <svg
+                      className="absolute top-[4rem] right-10 w-12 h-12 text-primary opacity-30 animate-pulse"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg
+                      className="absolute bottom-10 left-10 w-20 h-20 text-primary opacity-20 animate-pulse"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+
+                    {/* Content */}
+                    <p
+                      href="#"
+                      className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-primary rounded-full  dark:text-white"
+                      role="alert"
+                    >
+                      <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
+                        Join Us
+                      </span>
+                      <span className="text-sm font-medium text-white">
+                        Explore our services and journey
+                      </span>
+                      <svg
+                        className="ml-2 w-5 h-5"
+                        fill="white"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </p>
+                    <h1
+                      style={{
+                        fontFamily: "AgainstRegular",
+                   
+                      }}
+                      className="mb-4 text-xl md:leading-[60px] leading-[50px] uppercase font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl dark:text-white"
+                    >
+                      <span className="inline-block mr-2">Unlock</span>
+                      <span className="inline-block">international</span>
+                      <span className="bg-primary px-3 py-1 lg:py-2 rounded-xl text-white mr-2">
+                        opportunities
+                      </span>
+                      by developing applications that
+                      <span className="text-primary px-3">
+                        reach customers everywhere
+                      </span>
+                    </h1>
+                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
+                      At Tunirise, we craft web solutions that open up global
+                      opportunities, helping your business connect with clients
+                      everywhere. Our digital strategies drive growth and expand
+                      your reach, ensuring your success on a global scale.
+                    </p>
+                  </div>
                 </main>
               </section>
             </section>
@@ -79,9 +107,9 @@ export default function page() {
       </section>
       <Services isWeb={true} />
       <TimelineDemo />
-      <div className="relative">
+      {/* <div className="relative">
         <WavyBackground backgroundFill="#ffffff" />
-      </div>
+      </div> */}
     </>
   );
 }
