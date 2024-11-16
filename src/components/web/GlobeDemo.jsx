@@ -453,91 +453,86 @@ export function GlobeDemo() {
           </div>
 
           <div className="hidden lg:absolute top-32 left-10 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 576 512"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M560 64c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16H16C7.16 0 0 7.16 0 16v32c0 8.84 7.16 16 16 16h15.98v384H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h240v-80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v80h240c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16h-16V64h16zm-304 44.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm0 96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm-128-96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zM179.2 256h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8zM192 384c0-53.02 42.98-96 96-96s96 42.98 96 96H192zm256-140.8c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-96c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4z"></path>
-            </svg>
-            <p className="text-gray-500">Hotel Booking</p>
-          </div>
-          <div className="hidden lg:absolute bottom-20 left-16 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-plane"
-            >
-              <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
-            </svg>
-            <p className="text-gray-500">Flight Booking</p>
-          </div>
-          <div className="hidden lg:absolute top-36 right-20 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-map"
-            >
-              <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
-              <line x1="9" x2="9" y1="3" y2="18"></line>
-              <line x1="15" x2="15" y1="6" y2="21"></line>
-            </svg>
-            <p className="text-gray-500">Local Tour</p>
-          </div>
-          {/* <div className="hidden lg:absolute bottom-28 right-5 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 448 512"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M443.42764H4.571c0103.2622.192180.0643.418222.358C112.046414.135224448225.256448a312.824312.824000140.55-103.477c25.907-33.92353.1-87.1965.916-145.761H171.833c4.1436.42922.17767.94645.186.944h88.589c-17.01228.213-48.18654.4-80.45669.482-31.232-13.259-69.09-46.544-96.548-98.362-26.726-53.833-27.092-105.883-27.092-105.883H437.573A625.91625.91000443.42764Z"></path>
-            </svg>
-            <p className="text-gray-500">Local Events</p>
-          </div> */}
-          <div className="hidden lg:absolute bottom-[3rem] left-[32rem] h-16 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-            <p className="h-10 w-10 bg-neutral-500 rounded-full flex items-center justify-center text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-phone"
-              >
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-            </p>
-            <div>
-              <p className="text-sm text-gray-500">Customer Service</p>
-              <p className="text-sm text-gray-500">+216 51 343 854</p>
-            </div>
-          </div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    className="lucide lucide-globe"
+  >
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" x2="22" y1="12" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"></path>
+    <path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"></path>
+  </svg>
+  <p className="text-gray-500">Global Reach</p>
+</div>
+<div className="hidden lg:absolute bottom-20 left-16 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    className="lucide lucide-message-circle"
+  >
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5"></path>
+  </svg>
+  <p className="text-gray-500">Global Communication</p>
+</div>
+<div className="hidden lg:absolute top-36 right-20 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    className="lucide lucide-send"
+  >
+    <line x1="22" x2="11" y1="2" y2="13"></line>
+    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+  </svg>
+  <p className="text-gray-500">Expand Your Market</p>
+</div>
+<div className="hidden lg:absolute bottom-[3rem] left-[32rem] h-16 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+  <p className="h-10 w-10 bg-neutral-500 rounded-full flex items-center justify-center text-white">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-network"
+    >
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" x2="12" y1="2" y2="12"></line>
+      <line x1="12" x2="16.5" y1="12" y2="14.5"></line>
+      <line x1="12" x2="7.5" y1="12" y2="14.5"></line>
+    </svg>
+  </p>
+  <div>
+    <p className="text-sm text-gray-500">Client Support</p>
+    <p className="text-sm text-gray-500">+216 51 343 854</p>
+  </div>
+</div>
+
         </div>
       </div>
     </div>

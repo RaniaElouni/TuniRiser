@@ -13,7 +13,7 @@ export default function page() {
   return (
     <>
       {/* <GlobeDemo /> */}
-      <section class="relative w-full h-full min-h-screen  pb-24">
+      <section class="relative w-full h-full min-h-screen">
         <main class=" w-full h-full relative ">
           <div class="flex flex-wrap  ">
             <section class="w-full lg:w-[50%] flex flex-col  @md:px-2  dark:bg-[#5BC4C7]">
@@ -50,16 +50,18 @@ export default function page() {
                     </div>
                     <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-8">
                       <div class="mx-auto max-w-screen-xl px-2.5 flex flex-col items-center justify-center text-center h-full w-full py-6">
-                    
-                        <p className="text-2xl  lg:text-5xl   lg:leading-[4.5rem] text-center px-4">
-                        Unlock international
-                          <span className="bg-primary px-3 py-1 lg:py-2 rounded-xl text-white">
-                          opportunities 
+                        <p
+                          className="text-2xl  lg:text-6xl   lg:leading-[4.5rem] text-center px-4" style={{lineHeight:"5rem"}}
+                        
+                        >
+                           <span className="inline-block mr-2">Unlock</span> 
+                           <span className="inline-block">international</span>
+                          <span className="bg-primary px-3 py-1 lg:py-2 rounded-xl text-white "  >
+                            opportunities
                           </span>{" "}
-                          by developing
-                          applications that 
+                          by developing applications that
                           <span className="text-primary px-3">
-                          reach customers everywhere
+                            reach customers everywhere
                           </span>
                         </p>
                       </div>
