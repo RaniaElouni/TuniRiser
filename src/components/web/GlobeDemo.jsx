@@ -423,29 +423,6 @@ export function GlobeDemo() {
   return (
     <div className="flex relative overflow-x-hidden flex-row items-start justify-center h-screen md:h-auto dark:bg-black bg-white relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[75%] md:h-[40rem]  ">
-        {/* <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div">
-          <h2
-            className="text-center px-6 text-xl mt-12 md:text-4xl font-bold text-black dark:text-white " style={{
-              fontFamily: "AgainstRegular",
-              
-            }}>
-           Unlock international opportunities by developing applications that reach customers everywhere
-
-          </h2>
-         
-        </motion.div> */}
         <div className="">
           <div className="absolute w-full bottom-0 inset-x-0  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
           <div className="absolute w-full -bottom-6 sm:h-[90%] h-[80%] flex justify-center ">
@@ -453,86 +430,85 @@ export function GlobeDemo() {
           </div>
 
           <div className="hidden lg:absolute top-32 left-10 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    className="lucide lucide-globe"
-  >
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="2" x2="22" y1="12" y2="12"></line>
-    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"></path>
-    <path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"></path>
-  </svg>
-  <p className="text-gray-500">Global Reach</p>
-</div>
-<div className="hidden lg:absolute bottom-20 left-16 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    className="lucide lucide-message-circle"
-  >
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5"></path>
-  </svg>
-  <p className="text-gray-500">Global Communication</p>
-</div>
-<div className="hidden lg:absolute top-36 right-20 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    className="lucide lucide-send"
-  >
-    <line x1="22" x2="11" y1="2" y2="13"></line>
-    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-  </svg>
-  <p className="text-gray-500">Expand Your Market</p>
-</div>
-<div className="hidden lg:absolute bottom-[3rem] left-[32rem] h-16 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
-  <p className="h-10 w-10 bg-neutral-500 rounded-full flex items-center justify-center text-white">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className="lucide lucide-network"
-    >
-      <circle cx="12" cy="12" r="10"></circle>
-      <line x1="12" x2="12" y1="2" y2="12"></line>
-      <line x1="12" x2="16.5" y1="12" y2="14.5"></line>
-      <line x1="12" x2="7.5" y1="12" y2="14.5"></line>
-    </svg>
-  </p>
-  <div>
-    <p className="text-sm text-gray-500">Client Support</p>
-    <p className="text-sm text-gray-500">+216 51 343 854</p>
-  </div>
-</div>
-
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-globe"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" x2="22" y1="12" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"></path>
+              <path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"></path>
+            </svg>
+            <p className="text-gray-500">Global Reach</p>
+          </div>
+          <div className="hidden lg:absolute bottom-20 left-16 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-message-circle"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5"></path>
+            </svg>
+            <p className="text-gray-500">Global Communication</p>
+          </div>
+          <div className="hidden lg:absolute top-36 right-20 h-12 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-send"
+            >
+              <line x1="22" x2="11" y1="2" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            <p className="text-gray-500">Expand Your Market</p>
+          </div>
+          <div className="hidden lg:absolute bottom-[3rem] left-[32rem] h-16 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <p className="h-10 w-10 bg-neutral-500 rounded-full flex items-center justify-center text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-network"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" x2="12" y1="2" y2="12"></line>
+                <line x1="12" x2="16.5" y1="12" y2="14.5"></line>
+                <line x1="12" x2="7.5" y1="12" y2="14.5"></line>
+              </svg>
+            </p>
+            <div>
+              <p className="text-sm text-gray-500">Client Support</p>
+              <p className="text-sm text-gray-500">+216 51 343 854</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

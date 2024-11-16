@@ -13,38 +13,14 @@ export default function page() {
   return (
     <>
       {/* <GlobeDemo /> */}
-      <section class="relative w-full h-full  md:pb-24">
+      <section class="relative w-full h-full pb-24 ">
         <main class=" w-full h-full relative ">
           <div class="flex flex-wrap  ">
             <section class="w-full lg:w-[50%] flex flex-col  @md:px-2  dark:bg-[#5BC4C7]">
               <section class="w-full  flex-col-reverse  bg-amber-100">
                 <main class="w-full h-[90%] relative flex-col items-start mx-auto pt-24">
                   <div className="relative py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-                    {/* Background Stars */}
-                    {/* <svg
-                      className="absolute top-0 left-0 w-16 h-16 text-primary opacity-30"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg> */}
-                    <svg
-                      className="absolute top-[4rem] right-10 w-12 h-12 text-primary opacity-30 animate-pulse"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                    <svg
-                      className="absolute bottom-10 left-10 w-20 h-20 text-primary opacity-20 animate-pulse"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
+                 
 
                     {/* Content */}
                     <p
@@ -99,7 +75,7 @@ export default function page() {
               </section>
             </section>
 
-            <section class="relative w-full lg:w-[50%]">
+            <section class="relative w-full lg:w-[50%] hidden lg:flex">
               <GlobeDemo />
             </section>
           </div>
