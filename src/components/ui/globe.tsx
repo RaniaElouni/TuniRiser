@@ -5,6 +5,7 @@ import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "../../../public/dev/globe.json";
+import * as THREE from 'three';
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
@@ -153,21 +154,39 @@ export function Globe({ globeConfig, data }: WorldProps) {
     setGlobeData(filteredPoints);
   };
 
+
+
+  
+  
+
+
   useEffect(() => {
     if (globeRef.current && globeData) {
       globeRef.current
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
-        .hexPolygonMargin(0.7)
+        .hexPolygonMargin(0.3)
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
-        .hexPolygonColor((e) => {
-          return defaultProps.polygonColor;
-        });
+        .hexPolygonColor(() => 'rgba(255, 255, 255, 0.5)')
+        .pointColor(() => '#FF5733')
+        .pointAltitude(0.02)
+        .pointRadius(0.3)
+        .pointsMerge(true)
+        .hexPolygonAltitude(0.01)
+        .labelsData(
+                  countries.features.map((feature) => ({
+                    lat: feature.geometry.coordinates[1],
+                    lng: feature.geometry.coordinates[0],
+                    text: feature.properties.name,
+                  }))
+                )
+             
       startAnimation();
     }
   }, [globeData]);
+
 
   const startAnimation = () => {
     if (!globeRef.current || !globeData) return;

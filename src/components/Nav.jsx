@@ -63,7 +63,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
             </span>
           </div>
 
-          {/* Dropdown content */}
+      
           <div className="absolute left-0 z-50 w-full bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1 px-4 text-gray-800 shadow-xl">
             {/* {services.map((elem, i) => (
               <Link
@@ -79,7 +79,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
             <div key={index} className="w-full">
               <Link
                 href={option.path}
-                className={`block px-4 py-2`}
+                className={`block px-4 py-2 hover:text-primary`}
                 onClick={closeSheet}
               >
                 {option.name}

@@ -58,7 +58,7 @@ function Team() {
   return (
     <section
       data-aos="fade-right"
-      className=" mx-auto xl:container md:container sm:container  lg:pb-48 pb-24 xl:mt-48"
+      className=" mx-auto xl:container md:container sm:container  lg:pb-48 pb-24 xl:mt-16"
     >
       <div className="mx-2 ">
         <div className="lg:mb-24">

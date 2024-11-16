@@ -9,14 +9,14 @@ const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
 
 export function GlobeDemo() {
   const globeConfig = {
-    pointSize: 5,
+    pointSize: 50,
     globeColor: "#50e2d4",
     showAtmosphere: true,
     atmosphereColor: "#50e2d4",
     atmosphereAltitude: 0.12,
     emissive: "#00a896",
     emissiveIntensity: 0.2,
-    shininess: 1,
+    shininess: 4,
     polygonColor: "rgba(255, 255, 255, 0.6)",
     ambientLight: "#38bdf8",
     directionalLeftLight: "#bde0fe",
@@ -32,23 +32,30 @@ export function GlobeDemo() {
     autoRotate: true,
     autoRotateSpeed: 0.4,
     interactive: true,
-    showMarkers: true,                    // Enabling markers for key locations
+    showMarkers: true,
     markers: [
-      { lat: 33.8869, lng: 9.5375, label: "Tunisia HQ", color: "#fe6e33" },       // Tunisia
-      { lat: 48.8566, lng: 2.3522, label: "Paris Office", color: "#fe6e33" },     // Paris
-      { lat: 40.7128, lng: -74.0060, label: "New York Office", color: "#fe6e33" } // New York
+      { lat: 33.8869, lng: 9.5375, label: "Tunisia HQ", color: "#ff0000" }, // Bright red
+      { lat: 48.8566, lng: 2.3522, label: "Paris Office", color: "#ff9900" }, // Bright orange
+      {
+        lat: 40.7128,
+        lng: -74.006,
+        label: "New York Office",
+        color: "#00ff00",
+      }, // Bright green
     ],
-    tooltip: { enabled: true },            // Enable tooltips for markers
-    dayNightCycle: true,                   // Simulate day-night cycle
+    markerGlow: true, // Add this property if your library supports it
+    glowIntensity: 0.5, // Adjust the intensity
+
+    tooltip: { enabled: true },
+    dayNightCycle: true,
     onMarkerHover: (marker) => {
       console.log(`Hovering over: ${marker.label}`);
     },
     onMarkerClick: (marker) => {
       alert(`Clicked on: ${marker.label}`);
-    }
+    },
   };
-  
-  
+
   const colors = ["#fe6e33", "#fe6e33", "#fe6e33"];
   const sampleArcs = [
     {
@@ -414,20 +421,9 @@ export function GlobeDemo() {
   ];
 
   return (
-    (
-      
-    <div
-      className="flex relative overflow-x-hidden flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-        <div
-          aria-hidden="true"
-          class="flex absolute -top-96 start-3/4 transform -translate-x-1/2"
-        >
-          <div class="bg-gradient-to-r from-[#50e2d4]/70 to-purple-100 blur-3xl sm:w-[55rem] sm:h-[38rem]  h-[60rem] w-[20rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
-          <div class="bg-gradient-to-tl from-orange-100 via-orange-200 to-orange-100 blur-3xl sm:w-[90rem]  h-[60rem] w-[20rem] sm:h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] dark:from-orange-900/70 dark:via-orange-900/70 dark:to-orange-900/70"></div>
-        </div>
-      <div
-        className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem]  ">
-        <motion.div
+    <div className="flex relative overflow-x-hidden flex-row items-start justify-center h-screen md:h-auto dark:bg-black bg-white relative w-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[75%] md:h-[40rem]  ">
+        {/* <motion.div
           initial={{
             opacity: 0,
             y: 20,
@@ -445,23 +441,105 @@ export function GlobeDemo() {
               fontFamily: "AgainstRegular",
               
             }}>
-           Your Vision, Our Global Reach
-          </h2>
-          <p
-            className="text-center sm:block px-2 text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200  mt-2 mx-auto">
            Unlock international opportunities by developing applications that reach customers everywhere
-          </p>
-        </motion.div>
-    <div className="pt-[62px] ">
 
-        <div
-          className="absolute w-full bottom-0 inset-x-0 h-40  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-6 sm:h-[90%] h-[80%] flex justify-center ">
-          <World data={sampleArcs} globeConfig={globeConfig}   />
+          </h2>
+         
+        </motion.div> */}
+        <div className="">
+          <div className="absolute w-full bottom-0 inset-x-0  bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+          <div className="absolute w-full -bottom-6 sm:h-[90%] h-[80%] flex justify-center ">
+            <World data={sampleArcs} globeConfig={globeConfig} />
+          </div>
+
+          <div className="hidden lg:absolute top-32 left-10 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 576 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M560 64c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16H16C7.16 0 0 7.16 0 16v32c0 8.84 7.16 16 16 16h15.98v384H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h240v-80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v80h240c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16h-16V64h16zm-304 44.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm0 96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm-128-96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zM179.2 256h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8zM192 384c0-53.02 42.98-96 96-96s96 42.98 96 96H192zm256-140.8c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-96c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4z"></path>
+            </svg>
+            <p className="text-gray-500">Hotel Booking</p>
+          </div>
+          <div className="hidden lg:absolute bottom-20 left-16 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-plane"
+            >
+              <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+            </svg>
+            <p className="text-gray-500">Flight Booking</p>
+          </div>
+          <div className="hidden lg:absolute top-36 right-20 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-map"
+            >
+              <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+              <line x1="9" x2="9" y1="3" y2="18"></line>
+              <line x1="15" x2="15" y1="6" y2="21"></line>
+            </svg>
+            <p className="text-gray-500">Local Tour</p>
+          </div>
+          {/* <div className="hidden lg:absolute bottom-28 right-5 h-12 w-40 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M443.42764H4.571c0103.2622.192180.0643.418222.358C112.046414.135224448225.256448a312.824312.824000140.55-103.477c25.907-33.92353.1-87.1965.916-145.761H171.833c4.1436.42922.17767.94645.186.944h88.589c-17.01228.213-48.18654.4-80.45669.482-31.232-13.259-69.09-46.544-96.548-98.362-26.726-53.833-27.092-105.883-27.092-105.883H437.573A625.91625.91000443.42764Z"></path>
+            </svg>
+            <p className="text-gray-500">Local Events</p>
+          </div> */}
+          <div className="hidden lg:absolute bottom-[3rem] left-[32rem] h-16 w-48 p-2 lg:flex items-center justify-center bg-white rounded-md shadow-lg text-neutral-500 gap-2 text-sm">
+            <p className="h-10 w-10 bg-neutral-500 rounded-full flex items-center justify-center text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-phone"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </p>
+            <div>
+              <p className="text-sm text-gray-500">Customer Service</p>
+              <p className="text-sm text-gray-500">+216 51 343 854</p>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
     </div>
-    )
   );
 }
