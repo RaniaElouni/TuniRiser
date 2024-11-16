@@ -29,7 +29,8 @@ const MobileNav = () => {
               {/* Main Navigation Links */}
               <Nav
                 containerStyles='flex flex-col items-center gap-y-6'
-                linkStyles='text-2xl'
+                   linkStyles="relative hover:text-primary transition-all text-2xl"
+                underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
                 closeSheet={closeSheet}
               />
 

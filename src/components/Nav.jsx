@@ -10,7 +10,7 @@ const links = [
 
 const services = [
   { path: "/media-services", name: "Media Services" },
-  { path: "/web-dev", name: "Web Development Services" },
+  { path: "/web-dev", name: "Development Services" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
@@ -90,7 +90,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
         </div>
       </div>
 
-      <Link href="/contact" className={linkStyles} onClick={closeSheet}>
+      <Link href="/contact" className={`${linkStyles} xl:mt-0 mt-28`} onClick={closeSheet}>
         {"/contact" === path && (
           <motion.span
             initial={{ y: "-100%" }}
