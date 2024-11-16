@@ -50,9 +50,10 @@ export default function page() {
                     <h1
                       style={{
                         fontFamily: "AgainstRegular",
+                        lineHeight:"62px"
                    
                       }}
-                      className="mb-4 text-xl md:leading-[60px]  leading-[50px] uppercase font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl dark:text-white"
+                      className="mb-4 text-xl  uppercase font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl dark:text-white"
                     >
                       <span className="inline-block mr-2">Unlock</span>
                       <span className="inline-block">international</span>
